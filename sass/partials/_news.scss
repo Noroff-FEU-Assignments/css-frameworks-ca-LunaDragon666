@@ -1,0 +1,94 @@
+.grid {
+    display: grid;
+    grid-gap: 2.5em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 2.5em;
+  }
+
+  /* News/product card(s) */
+  .card {
+    border: none;
+    box-shadow: $default-boxshadow;
+    width: 100%;
+
+        img {
+        height: 245px;
+
+            /* Card content */
+            .card.title {
+                color: getColour(link);
+                font-size: 1.25em;
+
+            .card-text {
+                color: getColour(text-color);
+                font-size: 1.125em;
+                margin-bottom: -1em;
+            }
+        }
+    }
+  }
+
+/* Card button */
+.card-body {
+    padding: 1.5rem 2rem 2rem 2rem;
+
+    .btn.cta {
+        border-radius: 5px;
+        font-size: 1em;
+        height: 48px;
+        line-height: 2em;
+        text-transform: uppercase;
+        width: 100%;
+
+    .btn.cta:hover {
+        background: getColour(link);
+        color: white;
+       }
+    }
+}
+
+/* Button styling */ 
+.home-block .btn {
+    border: none;
+    position: relative;
+
+    :before {
+        border-radius: 0px 3px 3px 0px;
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 30px;
+        height: 100%;
+        background: #767676;
+    }
+  }
+
+/* Pagination */
+label.btn {
+    height: 50px;
+    line-height: 2.15em;
+    margin-bottom: 0.5rem;
+    margin-top: 3.5rem;
+    width: 50px;
+
+    .current {
+        border-radius: 5px 0px 0px 5px;
+    }
+
+    .next {
+        border-radius: 0;
+
+        .next, .last {
+            background: white;
+            border: 1px solid getColour(cta);
+            color: getColour(cta);
+        
+        .next:hover, .last:hover {
+            background: getColour(link);
+            border: 1px solid getColour(link);
+            color: white;
+        }
+      }
+    }
+}
