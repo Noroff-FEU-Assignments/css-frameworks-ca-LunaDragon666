@@ -1,0 +1,70 @@
+nav .container {
+        max-width: 95%;
+  
+    .navbar {
+        background: getColour(navbar);
+        box-shadow: rgba(106, 106, 106, 0.25) 0px 6px 12px;
+        padding: 1em 0;
+        position: absolute; 
+        width: 100%;
+        z-index: 999;
+    
+        /* Title */
+        .navbar-brand {
+            font-family: $heading;
+            font-weight: bold;
+            padding-right: 2em;
+    
+        .navbar-brand, .navbar-brand:hover {
+            color: getColour(cta);
+
+            /* Hamburger menu */
+            .navbar-toggler {
+                border: none;
+                padding: 0;
+
+            .navbar-collapse {
+                padding: 1.5em 0;
+            }
+          }
+       }
+    }
+  }
+}
+
+/* Links */
+.navbar .navbar-nav .nav-link, .navbar-nav .nav-link:hover {
+    color: getColour(link);
+
+        .navbar-nav {
+            margin-bottom: 2.1em;
+
+        .nav-item {
+            padding: 0.5em 0 1em;
+
+        .nav-link.active {
+            background: white;
+            border-radius: $border-corners;
+        }
+
+      }
+   }
+}
+
+/* MEDIA QUERIES */
+@media (min-width: $laptop) {
+    .navbar {
+        padding: 0;
+    }
+        .navbar-nav {
+            margin-bottom: 0;
+        }
+
+        .navbar-collapse {
+            padding: 0;
+        }
+        
+        .nav-item {
+            padding: 0;
+    }
+}
