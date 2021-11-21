@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: getColour(background-gradient);
+    font-family: $primary-font;
+}
+
+.wrapper {
+    flex: 1 0 auto;
+}
+
+/* Default container */
+.container {
+    margin: 0 auto;
+}
+
+/* Container (layout content) from home page */
+.container.content {
+    color: getColour(text-color); 
+    max-width: $layout-width;
+    padding: 3em 1em 2em;
+}
+
+  /* Container from "news" (product) page */
+  .container.products {
+    margin-bottom: 8.5rem;
+    margin-top: 6.75rem; 
+    max-width: $layout-width;
+  }
+
+  @media (min-width: $laptop) {
+    .container.content {
+        padding: 4.5em 1em 6em;
+    }
+    .container.products {
+        margin-top: 10rem; 
+    }
+}
