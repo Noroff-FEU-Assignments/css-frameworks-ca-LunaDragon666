@@ -1,0 +1,13 @@
+  a, a:hover {
+    text-decoration: none;
+  }
+
+  h1 {
+    color: getColour(cta); 
+    font-family: $heading;
+    padding-bottom: 0.25em;
+  }
+  
+  .heading {
+    margin-bottom: -0.75em;
+}
