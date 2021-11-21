@@ -1,0 +1,35 @@
+footer {
+    background: white;
+    color: getColour(text-color);
+    flex-shrink: 0;
+    font-size: $small-text;
+    padding: 0.5rem; 
+      
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+        text-align: center;
+
+        i {
+        font-size: 1.875;
+        margin-right: 0.4em;
+     }
+  }
+}
+
+.footer {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    padding: 0.5rem;
+
+      &&__social {
+        cursor: pointer;
+
+      &&__mail:hover {
+        color: getColour(cta);
+        text-decoration: underline;
+      } 
+   }
+}
