@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+$border-corners: 5px;
+$default-boxshadow: rgba(106, 106, 106, 0.25) 0px 6px 12px; 
+$heading: 'Playfair Display', serif;
+$laptop: 992px; 
+$layout-width: 90%;
+$primary-font: 'Lato', sans-serif;
+$small-text: 12px; 
+
+$colours: (
+    background-gradient: radial-gradient(#FFFFFF, #E5E5E5), // background colour
+    cta: #E92569,
+    navbar: #E5E5E5,  
+    /* Typography properties*/
+    link: #0A0A0A,
+    text-color: #767676,
+);
+
+@function getColour($colour) {
+    @return map-get($colours, $colour);
+}
