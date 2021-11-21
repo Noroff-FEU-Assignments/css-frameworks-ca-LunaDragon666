@@ -1,0 +1,45 @@
+/* Search bar */ 
+.d-flex {
+    box-shadow: $default-boxshadow;
+  }
+  
+  .form-control.search {
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    line-height: 0;
+    padding: 0.1rem 1.2rem;
+  }
+  
+  .btn {
+    background: getColour(cta);
+    border-radius: 0 5px 5px 0;
+    color: white;
+    line-height: 0.5em;
+  }
+  
+  .search, .form-control.search {
+    height: 50px;
+  }
+  
+  .btn.search:hover {
+    background: getColour(link); 
+  }
+  
+  @media (min-width: $laptop) {
+    .search, .form-control.search {
+      height: 35px;
+    }
+  }
+
+  /* Contact form from contact page */ 
+  .container.form {
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+    max-width: 95%;
+    
+    .contact-form {
+        padding: 0.5rem;
+    }
+  }
+
+  
